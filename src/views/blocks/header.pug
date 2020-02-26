@@ -1,0 +1,28 @@
+mixin menu-item(text, anchor)
+  li.Menu-Item
+    a.Menu-Link.Menu-Link_Active(href="#" + anchor data-to-block-id=anchor)= text
+
+header.Header-Outer.Container
+  .Header.Block
+    .Logo.ColLg3
+      a(href="#")
+        img.Logo-Img(src="/images/logo.png", alt="теплофф")
+    .Header-Info.ColLg9
+      .Contacts.Block
+        .Contacts-Phone.ColLg6
+          p +7 (800) 550-40-56
+          p Заказать звонок
+        .Contacts-Mail.ColLg6
+          p teploff43@yandex.ru
+          p vk fb inst
+      nav.Nav.ColLg8
+        span.MobileMenu-Button
+          span ICON MENU
+          //i.fas.fa-bars
+        ul.Menu
+          +menu-item("Проекты", "About")
+          +menu-item("Цены", "Events")
+          +menu-item("Наши работы", "Foto")
+          +menu-item("Отзывы", "Contacts")
+          +menu-item("Новости", "Contacts")
+          +menu-item("Контакты", "Contacts")

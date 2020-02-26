@@ -1,0 +1,16 @@
+.Header {
+  height: 230px;
+  padding-top: 20px;
+
+  &_Fixed {
+    background-color: $secondary-black;
+
+    & > .Header {
+      height: 70px;
+    }
+
+    & .Logo-Img {
+      width: 200px;
+    }
+  }
+}

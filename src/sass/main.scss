@@ -1,0 +1,28 @@
+/*
+Theme Name: Jericho
+Author: BuzmakovVI
+Description: Jecricho theme
+Version: 0.1.0
+Text Domain: jericho
+*/
+
+@import "./utils/mixin";
+
+/* base */
+@import "./base/colors";
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/grid";
+@import "./base/common";
+
+/* layout */
+@import "./layout/header";
+@import "./layout/footer";
+
+/* components */
+@import "./components/logo";
+@import "./components/contacts";
+@import "./components/menu";
+@import "./components/socials";
+@import "./components/copyright";
+@import "./components/gotoup";
