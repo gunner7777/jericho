@@ -1,0 +1,13 @@
+.HeaderPhone {
+  &-Number {
+    font-size: 1.2rem;
+  }
+
+  &-Order {
+    max-width: 126px;
+    margin-top: 10px;
+    color: $primary-active-elements;
+    padding-bottom: 3px;
+    border-bottom: 1px solid $primary-active-elements;
+  }
+}

@@ -1,6 +1,13 @@
 .Footer {
-  background-color: $primary-bg;
+  position: relative;
   color: $secondary-text;
   padding-bottom: 20px;
   padding-top: 30px;
+  max-width: 1330px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &-Outer {
+    background-color: $primary-bg;
+  }
 }
