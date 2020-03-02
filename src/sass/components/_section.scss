@@ -1,0 +1,11 @@
+.Section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  &-Title {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: $primary-text;
+    margin-bottom: 30px;
+  }
+}

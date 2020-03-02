@@ -1,0 +1,13 @@
+.Stroika {
+  &-Single {
+    max-width: 400px;
+  }
+
+  &-Info {
+    margin-top: 10px;
+
+    & > p:last-child {
+      margin-top: 7px;
+    }
+  }
+}
