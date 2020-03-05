@@ -22,18 +22,23 @@ Text Domain: jericho
 @import "./layout/footer";
 
 /* components */
+@import "./components/button";
 @import "./components/logo";
 @import "./components/headerphone";
 @import "./components/headermail";
 @import "./components/contacts";
 @import "./components/menu";
 @import "./components/section";
+@import "./components/combinedblock";
 @import "./components/newsslide";
 @import "./components/housevariants";
 @import "./components/popularhouses";
 @import "./components/stroika";
 @import "./components/answers";
+@import "./components/news";
+@import "./components/raschet";
 @import "./components/socials";
+@import "./components/footersection";
 @import "./components/copyright";
 @import "./components/gotoup";
 @import "./components/sipa";

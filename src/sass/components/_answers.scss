@@ -1,12 +1,19 @@
 .Answers {
+  &-Inner {
+    margin-bottom: 30px;
+  }
+
   &-Single {
     background-color: $secondary-accent-2;
     max-width: 300px;
     max-height: 200px;
     padding: 15px;
+    overflow: hidden;
 
     & > p {
-      text-overflow: ellipsis;
+      /* text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;*/
     }
   }
 }

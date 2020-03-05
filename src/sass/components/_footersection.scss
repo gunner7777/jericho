@@ -1,0 +1,19 @@
+.FooterSection {
+  &-Title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 13px;
+  }
+
+  &-Link {
+    color: $secondary-text;
+  }
+
+  &-Item {
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

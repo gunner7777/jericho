@@ -1,0 +1,14 @@
+.Button {
+}
+
+.ButtonUnderscore {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: $primary-active-elements;
+  padding-bottom: 3px;
+  border-bottom: 1px solid $primary-active-elements;
+}
