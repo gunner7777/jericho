@@ -1,15 +1,15 @@
 .Form-Outer
-.Block
-  h3.Form-Title Оставьте вашу заявку
-  label.Form-Label Ваше имя
-    input.Form-Input(type="text")
-  label.Form-Label Ваш телефон
-    input(type="text")
-  label.Form-Label Ваш e-mail
-    input(type="text")
-  label.Form-Label Сообщение
-    input(type="text")
-  label.Form-Label
-    input(type="checkbox")
-    span Согласие на обработку персональных данных
-  button.Button.Button_Send Отправить
+  .Form.Block.Block-Column
+    h3.Form-Title.Text_Center Оставьте вашу заявку
+    label.Form-Label Ваше имя
+      input.Form-Input(type="text")
+    label.Form-Label Ваш телефон
+      input.Form-Input(type="text")
+    label.Form-Label Ваш e-mail
+      input.Form-Input(type="text")
+    label.Form-Label Сообщение
+      textarea.Form-Textarea
+    label.Form-Label.Text_Center
+      input.Form-Checkbox(type="checkbox")
+      span Согласие на обработку персональных данных
+    button.Button.Button_Send Отправить

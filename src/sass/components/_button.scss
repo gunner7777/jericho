@@ -1,4 +1,15 @@
 .Button {
+  max-width: 150px;
+  height: 40px;
+  color: $secondary-text;
+  border: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &_Send {
+    background-color: $primary-active-elements;
+  }
 }
 
 .ButtonUnderscore {

@@ -5,8 +5,8 @@ Description: Jecricho theme
 Version: 0.1.0
 Text Domain: jericho
 */
-/* @import url("./fontawesome/fontawesome.scss");
-@import url("./fontawesome/brands.scss"); */
+@import "./fontawesome/fontawesome";
+@import "./fontawesome/brands";
 
 @import "./utils/mixin";
 
@@ -37,6 +37,7 @@ Text Domain: jericho
 @import "./components/answers";
 @import "./components/news";
 @import "./components/raschet";
+@import "./components/form";
 @import "./components/socials";
 @import "./components/footersection";
 @import "./components/copyright";
