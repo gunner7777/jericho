@@ -1,6 +1,6 @@
 mixin menu-item(text, anchor)
   li.Menu-Item
-    a.Menu-Link.Menu-Link_Active(href="#" + anchor data-to-block-id=anchor)= text
+    a.Menu-Link(href="#" + anchor data-to-block-id=anchor)= text
 
 header.Header-Outer.Container
   .Header.Block
@@ -15,16 +15,24 @@ header.Header-Outer.Container
             //span.HeaderPhone-Order.ButtonUnderscore Заказать звонок
         .Contacts-Mail.ColLg6
           p.HeaderMail teploff43@yandex.ru
-          .Socials vk fb inst
-            p.Socials-Vk
+          .Socials
+            p.Socials-Icon.Socials-Icon_Vk.Text_Center
+            p.Socials-Icon.Socials-Icon_Fb.Text_Center
+            p.Socials-Icon.Socials-Icon_Inst.Text_Center
+
       nav.Nav.ColLg8
         span.MobileMenu-Button
           span ICON MENU
           //i.fas.fa-bars
         ul.Menu
-          +menu-item("Проекты", "About")
+          //+menu-item("Проекты", "About")
+          li.Menu-Item
+            a.Menu-Link.Menu-Link_Active(href="#About" data-to-block-id="About") Проекты
+              span.Menu-Icon
           +menu-item("Цены", "Events")
           +menu-item("Наши работы", "Foto")
           +menu-item("Отзывы", "Contacts")
           +menu-item("Новости", "Contacts")
           +menu-item("Контакты", "Contacts")
+    .Favs
+      p.Favs-Icon

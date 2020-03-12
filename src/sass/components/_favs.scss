@@ -1,0 +1,15 @@
+.Favs {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  &-Icon {
+    @extend %fa-icon;
+    @extend .far;
+
+    &:before {
+      content: fa-content($fa-var-star);
+      font-size: 1.5rem;
+      color: $primary-bg;
+    }
+  }
+}

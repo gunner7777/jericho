@@ -7,6 +7,8 @@ Text Domain: jericho
 */
 @import "./fontawesome/fontawesome";
 @import "./fontawesome/brands";
+@import "./fontawesome/regular";
+@import "./fontawesome/solid";
 
 @import "./utils/mixin";
 
@@ -27,6 +29,7 @@ Text Domain: jericho
 @import "./components/headerphone";
 @import "./components/headermail";
 @import "./components/contacts";
+@import "./components/favs";
 @import "./components/menu";
 @import "./components/section";
 @import "./components/combinedblock";

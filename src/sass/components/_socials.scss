@@ -1,49 +1,72 @@
 .Socials {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 5px;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: flex-end;
 
-  &-Vk {
-    @extend %fa-icon;
-    @extend .fab;
-    background-color: #ff0;
-    width: 20px;
-    height: 20px;
-
-    &::before {
-      content: fa-content($fa-var-twitter);
-    }
-  }
-
-  &-Wrapper {
-    max-width: 60px;
-    max-height: 60px;
-    margin-right: 10px;
-    border-radius: 100%;
-    padding: 8px;
-    transition: background-color 0.3s ease;
+  &-Icon {
+    margin-right: 5px;
+    color: $secondary-text;
+    position: relative;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
+    transition: opacity 0.3s ease;
 
     &:last-child {
       margin-right: 0;
     }
 
-    &_VK:hover {
+    &:hover {
+      opacity: 0.85;
+    }
+
+    &_Vk {
+      @extend %fa-icon;
+      @extend .fab;
       background-color: $vk_bg;
+      border-radius: 100%;
+
+      &::before {
+        position: relative;
+        display: block;
+        content: fa-content($fa-var-vk);
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.3rem;
+      }
     }
-    &_FB:hover {
+
+    &_Fb {
+      @extend %fa-icon;
+      @extend .fab;
       background-color: $facebook_bg;
+      border-radius: 100%;
+
+      &::before {
+        position: relative;
+        display: block;
+        content: fa-content($fa-var-facebook-f);
+        font-size: 1.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
-    &_IN:hover {
+
+    &_Inst {
+      @extend %fa-icon;
+      @extend .fab;
       background-color: $instagram_bg;
-    }
-    &_YT:hover {
-      background-color: $youtube_bg;
-    }
-    &_TW:hover {
-      background-color: $twitter_bg;
+      border-radius: 100%;
+
+      &::before {
+        position: relative;
+        display: block;
+        content: fa-content($fa-var-instagram);
+        font-size: 1.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
   }
 }

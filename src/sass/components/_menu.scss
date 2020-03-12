@@ -26,6 +26,22 @@
       color: $primary-active-elements;
       border-top: 4px solid $primary-active-elements;
     }
+
+    &_Active {
+      color: $primary-active-elements;
+      border-top: 4px solid $primary-active-elements;
+    }
+  }
+
+  &-Icon {
+    @extend %fa-icon;
+    @extend .fas;
+    /* position: relative; */
+    margin-left: 10px;
+
+    &:before {
+      content: fa-content($fa-var-caret-down);
+    }
   }
 }
 
