@@ -2,7 +2,13 @@
   margin-top: 5px;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-end;
+
+  &_JCFE {
+    justify-content: flex-end;
+  }
+  &_JCFS {
+    justify-content: flex-start;
+  }
 
   &-Icon {
     margin-right: 5px;

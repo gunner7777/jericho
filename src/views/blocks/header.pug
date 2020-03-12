@@ -1,5 +1,5 @@
 mixin menu-item(text, anchor)
-  li.Menu-Item
+  li.Menu-Item.Text_Center
     a.Menu-Link(href="#" + anchor data-to-block-id=anchor)= text
 
 header.Header-Outer.Container
@@ -15,18 +15,18 @@ header.Header-Outer.Container
             //span.HeaderPhone-Order.ButtonUnderscore Заказать звонок
         .Contacts-Mail.ColLg6
           p.HeaderMail teploff43@yandex.ru
-          .Socials
+          .Socials.Socials_JCFE
             p.Socials-Icon.Socials-Icon_Vk.Text_Center
             p.Socials-Icon.Socials-Icon_Fb.Text_Center
             p.Socials-Icon.Socials-Icon_Inst.Text_Center
 
       nav.Nav.ColLg8
         span.MobileMenu-Button
-          span ICON MENU
+          //span ICON MENU
           //i.fas.fa-bars
         ul.Menu
           //+menu-item("Проекты", "About")
-          li.Menu-Item
+          li.Menu-Item.Text_Center
             a.Menu-Link.Menu-Link_Active(href="#About" data-to-block-id="About") Проекты
               span.Menu-Icon
           +menu-item("Цены", "Events")

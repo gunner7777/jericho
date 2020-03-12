@@ -6,6 +6,7 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  cursor: pointer;
 
   &_Send {
     background-color: $primary-active-elements;
@@ -22,4 +23,11 @@
   color: $primary-active-elements;
   padding-bottom: 3px;
   border-bottom: 1px solid $primary-active-elements;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $secondary-accent-3;
+    border-bottom: 1px solid $secondary-accent-3;
+  }
 }

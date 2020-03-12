@@ -15,6 +15,11 @@
     height: 180px;
     border: 1px solid $secondary-accent-1;
     position: relative;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $secondary-accent-2;
+    }
   }
 
   &-SingleInner {
