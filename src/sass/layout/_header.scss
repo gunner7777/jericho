@@ -1,7 +1,12 @@
 .Header {
   position: relative;
-  height: 230px;
+  /* height: 230px; */
+  height: 200px;
   padding-top: 20px;
+
+  &-Info {
+    width: 80%;
+  }
 
   &_Fixed {
     background-color: $secondary-black;
@@ -13,5 +18,17 @@
     & .Logo-Img {
       width: 200px;
     }
+  }
+}
+
+@include mq-max(991px) {
+  .Header {
+    height: 185px;
+  }
+}
+
+@include mq-max(768px) {
+  .Header {
+    height: 170px;
   }
 }

@@ -4,12 +4,15 @@
   color: $secondary-text;
   border: none;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   cursor: pointer;
 
   &_Send {
     background-color: $primary-active-elements;
+  }
+
+  &_Center {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

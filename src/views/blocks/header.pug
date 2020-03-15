@@ -4,24 +4,28 @@ mixin menu-item(text, anchor)
 
 header.Header-Outer.Container
   .Header.Block
-    .Logo.ColLg3
+    //.Logo.ColLg3.ColMd3
+    .Logo
       a(href="#")
         img.Logo-Img(src="/images/logo.png", alt="теплофф")
-    .Header-Info.ColLg9
+    //.Header-Info.ColLg9.ColMd9
+    .Header-Info
       .Contacts.Block
-        .Contacts-Phone.ColLg6
+        .Contacts-Phone.ColMd6
           p.HeaderPhone-Number.Text_Center +7 (800) 550-40-56
           p.ButtonUnderscore Заказать звонок
             //span.HeaderPhone-Order.ButtonUnderscore Заказать звонок
-        .Contacts-Mail.ColLg6
+        .Contacts-Mail.ColMd6
           p.HeaderMail teploff43@yandex.ru
           .Socials.Socials_JCFE
             p.Socials-Icon.Socials-Icon_Vk.Text_Center
             p.Socials-Icon.Socials-Icon_Fb.Text_Center
             p.Socials-Icon.Socials-Icon_Inst.Text_Center
 
-      nav.Nav.ColLg8
-        span.MobileMenu-Button
+      nav.Nav.ColLg12
+        div.MobileMenu
+          button.Button.Button_Send Оставить заявку
+          .MobileMenu-Button.Text_Center
           //span ICON MENU
           //i.fas.fa-bars
         ul.Menu
