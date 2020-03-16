@@ -32,3 +32,21 @@
     height: 170px;
   }
 }
+
+@include mq-max(700px) {
+  .Header {
+    &-Info {
+      width: 75%;
+    }
+  }
+}
+
+@include mq-max(575px) {
+  .Header {
+    height: auto;
+
+    &-Info {
+      width: 100%;
+    }
+  }
+}

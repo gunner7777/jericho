@@ -11,3 +11,12 @@
     border-bottom: 1px solid $primary-active-elements; */
   }
 }
+
+@include mq-max(650px) {
+  .HeaderPhone {
+    &-Number {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+  }
+}

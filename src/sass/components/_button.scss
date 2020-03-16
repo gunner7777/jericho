@@ -34,3 +34,9 @@
     border-bottom: 1px solid $secondary-accent-3;
   }
 }
+
+@include mq-max(650px) {
+  .ButtonUnderscore {
+    font-size: 1.1rem;
+  }
+}
