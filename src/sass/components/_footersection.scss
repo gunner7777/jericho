@@ -1,4 +1,17 @@
 .FooterSection {
+  margin-bottom: 15px;
+
+  &:nth-of-type(2) {
+    padding-left: 10%;
+  }
+  &:last-child {
+    text-align: right;
+  }
+
+  &-Socials {
+    justify-content: flex-end;
+  }
+
   &-Title {
     font-size: 1.1rem;
     font-weight: 500;
@@ -19,6 +32,25 @@
 
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+}
+
+@include mq-max(575px) {
+  .FooterSection {
+    &-Title {
+      margin-bottom: 7px;
+    }
+
+    &:nth-of-type(2) {
+      padding-left: 0;
+    }
+    &:last-child {
+      text-align: left;
+    }
+
+    &-Socials {
+      justify-content: flex-start;
     }
   }
 }

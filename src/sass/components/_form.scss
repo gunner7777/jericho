@@ -1,5 +1,5 @@
 .Form {
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
 
   &-Outer {
@@ -37,5 +37,29 @@
 
   &-Textarea {
     height: 100px;
+  }
+
+  &-Checkbox {
+    margin-right: 5px;
+  }
+}
+
+@include mq-max(767px) {
+  .Form {
+    &-Outer {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@include mq-max(575px) {
+  .Form {
+    &-Label {
+      font-size: 1rem;
+    }
+    &-Title {
+      font-size: 1.5rem;
+    }
   }
 }

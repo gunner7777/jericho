@@ -5,15 +5,34 @@
 
   &-Single {
     background-color: $secondary-accent-2;
-    max-width: 300px;
+    max-width: 24%;
     max-height: 200px;
     padding: 15px;
+    margin-bottom: 7px;
     overflow: hidden;
+  }
+}
 
-    & > p {
-      /* text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;*/
+@include mq-max(991px) {
+  .Answers {
+    &-Single {
+      max-width: 49%;
+    }
+  }
+}
+
+@include mq-max(767px) {
+  .Answers {
+    &-Inner {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@include mq-max(540px) {
+  .Answers {
+    &-Single {
+      max-width: 100%;
     }
   }
 }

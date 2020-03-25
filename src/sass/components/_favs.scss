@@ -13,3 +13,53 @@
     }
   }
 }
+
+@include mq-max(900px) {
+  .Favs {
+    top: 70%;
+    right: 35%;
+  }
+}
+
+@include mq-max(768px) {
+  .Favs {
+    top: 72%;
+  }
+}
+
+@include mq-max(700px) {
+  .Favs {
+    right: 28%;
+  }
+}
+
+@include mq-max(575px) {
+  .Favs {
+    top: 85%;
+    right: 40%;
+  }
+}
+
+@include mq-max(480px) {
+  .Favs {
+    right: 37%;
+  }
+}
+
+@include mq-max(400px) {
+  .Favs {
+    top: 87%;
+  }
+}
+
+@include mq-max(380px) {
+  .Favs {
+    right: 33%;
+  }
+}
+
+@include mq-max(300px) {
+  .Favs {
+    right: 28%;
+  }
+}

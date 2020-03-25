@@ -10,6 +10,9 @@
     justify-content: flex-start;
   }
 
+  &_Header {
+  }
+
   &-Icon {
     margin-right: 5px;
     color: $secondary-text;
@@ -73,6 +76,14 @@
         top: 50%;
         transform: translateY(-50%);
       }
+    }
+  }
+}
+
+@include mq-max(400px) {
+  .Socials {
+    &_Header {
+      justify-content: center;
     }
   }
 }

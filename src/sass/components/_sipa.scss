@@ -1,6 +1,7 @@
 .Sipa {
-  position: absolute;
-  right: 0;
-  bottom: 13px;
-  width: 260px;
+  position: relative;
+  margin-top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
 }

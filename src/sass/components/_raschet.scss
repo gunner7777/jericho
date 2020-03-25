@@ -3,3 +3,15 @@
     margin-top: 20px;
   }
 }
+
+@include mq-max(991px) {
+  .Raschet {
+    &-Contacts {
+      margin-top: 15px;
+
+      & > div {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

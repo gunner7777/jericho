@@ -36,3 +36,10 @@
     }
   }
 }
+
+@include mq-max(500px) {
+  .MobileMenu {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

@@ -20,16 +20,31 @@
   }
 }
 
+@include mq-max(900px) {
+  .Contacts {
+    &-Mail {
+      padding-right: 15px;
+    }
+  }
+}
+
 @include mq-max(768px) {
   .Contacts {
     justify-content: space-around;
   }
 }
 
-@include mq-max(700px) {
+@include mq-max(400px) {
   .Contacts {
+    height: 140px;
+
+    &-Phone {
+      width: 100%;
+    }
+
     &-Mail {
-      padding-right: 40px;
+      text-align: center;
+      width: 100%;
     }
   }
 }

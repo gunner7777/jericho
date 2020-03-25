@@ -40,3 +40,9 @@
     font-size: 1.1rem;
   }
 }
+
+@include mq-max(300px) {
+  .Button {
+    font-size: 0.9rem;
+  }
+}

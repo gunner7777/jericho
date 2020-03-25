@@ -1,10 +1,14 @@
 .PopularHouses {
+  &-Inner {
+    justify-content: space-between;
+  }
+
   &-Single {
     position: relative;
     margin-bottom: 7px;
-    max-width: 425px;
-    padding-right: 5px;
-    padding-left: 5px;
+    max-width: 33%;
+    /* padding-right: 5px;
+    padding-left: 5px; */
   }
 
   &-Info {
@@ -18,6 +22,28 @@
 
     & > p:last-child {
       margin-top: 5px;
+    }
+  }
+}
+
+@include mq-max(768px) {
+  .PopularHouses {
+    &-Inner {
+      justify-content: space-around;
+    }
+    &-Single {
+      max-width: 49%;
+    }
+  }
+}
+
+@include mq-max(540px) {
+  .PopularHouses {
+    &-Inner {
+      /* justify-content: flex-start; */
+    }
+    &-Single {
+      max-width: 100%;
     }
   }
 }

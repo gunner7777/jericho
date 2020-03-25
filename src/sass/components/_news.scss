@@ -2,11 +2,12 @@
   position: relative;
 
   &-Inner {
+    justify-content: space-between;
     margin-bottom: 30px;
   }
 
   &-Single {
-    width: 300px;
+    max-width: 24.5%;
     margin-bottom: 15px;
   }
 
@@ -16,5 +17,30 @@
   }
   &-Date {
     margin-top: 5px;
+  }
+}
+
+@include mq-max(767px) {
+  .News {
+    &-Inner {
+      justify-content: space-around;
+      margin-bottom: 15px;
+    }
+
+    &-Single {
+      max-width: 49%;
+    }
+  }
+}
+
+@include mq-max(540px) {
+  .News {
+    &-Inner {
+      /*  justify-content: flex-start; */
+    }
+
+    &-Single {
+      max-width: 100%;
+    }
   }
 }

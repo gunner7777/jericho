@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   max-width: 880px;
   background-color: $secondary-bg;
@@ -13,7 +13,7 @@
   &-Single {
     width: 220px;
     height: 180px;
-    border: 1px solid $secondary-accent-1;
+    /* border: 1px solid $secondary-accent-1; */
     position: relative;
     cursor: pointer;
 
@@ -24,12 +24,15 @@
 
   &-SingleInner {
     position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
     top: 50%;
     transform: translateY(-50%);
   }
 
   &-Img {
-    width: 120px;
+    max-width: 60%;
+    /* max-width: 120px; */
     /* position: relative;
     top: 50%;
     transform: translateY(-50%); */
@@ -37,5 +40,85 @@
   &-Text {
     margin-top: 22px;
     font-size: 1.25rem;
+  }
+}
+
+@include mq-max(991px) {
+  .HouseVariants {
+    width: 90%;
+    &-Single {
+      width: 200px;
+      height: 160px;
+    }
+  }
+}
+
+@include mq-max(889px) {
+  .HouseVariants {
+    &-Single {
+      width: 186px;
+    }
+
+    &-Text {
+      margin-top: 18px;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@include mq-max(826px) {
+  .HouseVariants {
+    &-Single {
+      width: 170px;
+    }
+  }
+}
+
+@include mq-max(767px) {
+  .HouseVariants {
+    width: 95%;
+    transform: translateX(-50%);
+    box-shadow: none;
+    margin-bottom: 50px;
+  }
+}
+
+@include mq-max(716px) {
+  .HouseVariants {
+    &-Single {
+      width: 150px;
+    }
+    &-Text {
+      font-size: 1rem;
+    }
+  }
+}
+
+@include mq-max(635px) {
+  .HouseVariants {
+    justify-content: center;
+    &-Single {
+      width: 202px;
+    }
+  }
+}
+
+@include mq-max(425px) {
+  .HouseVariants {
+    &-Single {
+      width: 150px;
+      height: 130px;
+    }
+    &-Text {
+      margin-top: 12px;
+    }
+  }
+}
+
+@include mq-max(315px) {
+  .HouseVariants {
+    &-Single {
+      width: 110px;
+    }
   }
 }

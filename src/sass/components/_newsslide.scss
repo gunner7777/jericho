@@ -34,6 +34,7 @@
 
   &-TextBg {
     position: absolute;
+    width: 70%;
     background-color: rgba($primary-bg, 0.65);
     top: 50%;
     left: 50%;
@@ -47,5 +48,82 @@
     font-size: 2.1rem;
     font-weight: 500;
     line-height: 3rem;
+  }
+}
+
+@include mq-max(991px) {
+  .NewsSlide {
+    &-Text {
+      font-size: 2rem;
+    }
+  }
+}
+
+@include mq-max(800px) {
+  .NewsSlide {
+    &-Text {
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+@include mq-max(700px) {
+  .NewsSlider {
+    &-Left,
+    &-Right {
+      font-size: 3rem;
+      width: 45px;
+      height: 45px;
+    }
+  }
+  .NewsSlide {
+    &-TextBg {
+      width: 80%;
+      padding: 15px;
+    }
+    &-Text {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+}
+
+@include mq-max(575px) {
+  .NewsSlider {
+    &-Left,
+    &-Right {
+      font-size: 2.5rem;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@include mq-max(500px) {
+  .NewsSlide {
+    &-Text {
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+    }
+  }
+}
+
+@include mq-max(430px) {
+  .NewsSlide {
+    &-TextBg {
+      padding: 10px;
+    }
+    &-Text {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@include mq-max(370px) {
+  .NewsSlide {
+    &-Text {
+      font-size: 1rem;
+    }
   }
 }
