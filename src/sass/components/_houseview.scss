@@ -1,0 +1,14 @@
+.HouseView {
+  position: relative;
+
+  &-BigImage {
+    max-height: 550px;
+    overflow: hidden;
+  }
+  &-ThumbsSet {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+}

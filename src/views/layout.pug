@@ -24,8 +24,10 @@ html(lang="ru")
     //include blocks/sendForm.pug
 
     include blocks/houseTitle.pug
-    include blocks/houseView.pug
-    include blocks/houseParams.pug
+    .HouseViewAndParams.Container
+      .Block.No-Gutters
+        include blocks/houseView.pug
+        include blocks/houseParams.pug
     include blocks/houseDescription.pug
     include blocks/sameProjects.pug
     include blocks/sendForm.pug

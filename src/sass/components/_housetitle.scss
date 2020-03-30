@@ -1,0 +1,19 @@
+.HouseTitle {
+  background-image: url("../../images/articleTitleBg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 150px;
+  position: relative;
+
+  &-Outer {
+    margin-bottom: 50px;
+  }
+
+  &-Text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: $secondary-text;
+  }
+}

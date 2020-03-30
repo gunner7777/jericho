@@ -1,0 +1,60 @@
+.SameProjects {
+  margin-top: 50px;
+
+  &-Title {
+    margin-bottom: 15px;
+  }
+
+  &-Set {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+
+  &-Item {
+    max-width: 250px;
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &-Text {
+    margin-top: 5px;
+  }
+}
+
+@include mq-max(992px) {
+  .SameProjects {
+    &-Set {
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    &-Item {
+      max-width: 500px;
+      width: 33%;
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+  }
+}
+
+@include mq-max(575px) {
+  .SameProjects {
+    &-Set {
+      justify-content: space-between;
+    }
+    &-Item {
+      width: 49%;
+    }
+  }
+}
+
+@include mq-max(400px) {
+  .SameProjects {
+    &-Item {
+      width: 100%;
+    }
+  }
+}

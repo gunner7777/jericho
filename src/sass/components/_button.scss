@@ -1,5 +1,5 @@
 .Button {
-  max-width: 150px;
+  width: 150px;
   height: 40px;
   color: $secondary-text;
   border: none;
@@ -8,6 +8,22 @@
 
   &_Send {
     background-color: $primary-active-elements;
+  }
+
+  &_InParams {
+    width: 100%;
+    margin-bottom: 15px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &_Green {
+    background-color: $primary-success;
+  }
+  &_Brown {
+    background-color: $primary-accent-2;
   }
 
   &_Center {
@@ -35,9 +51,33 @@
   }
 }
 
+/* @include mq-max(850px) {
+  .Button {
+    &_InParams {
+      width: 80%;
+    }
+  }
+} */
+
 @include mq-max(650px) {
   .ButtonUnderscore {
     font-size: 1.1rem;
+  }
+}
+
+@include mq-max(568px) {
+  .Button {
+    &_InParams {
+      width: 70%;
+    }
+  }
+}
+
+@include mq-max(450px) {
+  .Button {
+    &_InParams {
+      width: 100%;
+    }
   }
 }
 
